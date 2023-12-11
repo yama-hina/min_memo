@@ -1,0 +1,58 @@
+@charset "UTF-8";
+header {
+  height: 90px;
+  background-color: rgb(255, 180, 68);
+  border-bottom: solid rgb(255, 199, 95);
+  box-shadow: rgb(255, 199, 95) 0 0 5px;
+  color: rgb(83, 81, 81);
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 90px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999999999;
+  font-weight: 900;
+}
+header a {
+  width: 50px;
+  line-height: 90px;
+  font-size: 1.6rem;
+  text-decoration: none;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 45px;
+  left: 45px;
+}
+header a .Arrow-Left {
+  border-bottom: solid 6px #ffffff;
+  border-left: solid 6px #ffffff;
+  width: 24px;
+  height: 24px;
+  transform: rotate(45deg);
+  border-radius: 4px;
+}
+header #headerText {
+  margin: 0 auto;
+  font-size: 33px;
+  font-weight: 600;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  background-attachment: fixed;
+  background-size: 200%;
+  background: linear-gradient(rgba(255, 229, 178, 0.5176470588) 10%, rgba(255, 215, 135, 0.5176470588) 30%, rgba(253, 187, 56, 0.5647058824), rgba(255, 215, 135, 0.5176470588) 70%, rgba(255, 229, 178, 0.5176470588)); /*グラデーションを定義*/
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  padding-top: 90px;
+}
+body main {
+  overflow: auto;
+}/*# sourceMappingURL=header.css.map */

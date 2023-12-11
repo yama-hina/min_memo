@@ -1,0 +1,73 @@
+@keyframes rotation{
+    0%{ transform:rotate(0);opacity: 1;}
+    35%{ transform:rotate(-90deg);}
+    85%{transform: rotate(-90deg);opacity: 1;}
+    100%{transform: rotate(-90deg);opacity:0;z-index: -1;}
+}
+@keyframes fade{
+    0%{opacity: 1;}
+    80%{opacity: 1;}
+    100%{opacity:0;z-index: -1;}
+}
+@keyframes fuwafuwa {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+}
+@keyframes delete{
+    100%{
+        z-index: -1;
+    }
+}
+
+.rotate{
+    margin: 0 auto;
+    animation:3.5s linear forwards  rotation;
+    margin-bottom: 3%;
+    width: 80px;
+    height: auto;
+}
+.bg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    animation:3.5s linear forwards  fade;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(70%, #f9a60084), to(#f9a400));
+    background: linear-gradient(white, #f9a60084 70%, #f9a400);
+    background-color: #f5b642;
+}
+.rote{
+    animation: fuwafuwa 2s infinite;
+    
+    margin: 10% auto;
+    -webkit-text-stroke: .8px #000000;
+    font-weight: 900;
+    font-size: 25px;
+    color: #ffffff;
+
+    /* font-family: -apple-system, "Segoe UI", "Helvetica Neue", "Hiragino Kaku Gothic ProN", メイリオ, meiryo, sans-serif; */
+}
+
+
+
+#loader{
+    position: fixed;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 80vw;
+    height: 50vh;
+    /* margin: -100px; */
+    text-align: center;
+    color: rgba(0, 0, 0, 0.785);
+    z-index: 2;
+}
