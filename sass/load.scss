@@ -1,0 +1,32 @@
+// 作成者　原 ver.1.0
+#loader-bg {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient( white,#f9a60084 70%, #f9a400);
+    background-color: #f9a400;
+    z-index: 1;
+  }
+  #loader {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50vw;
+    height: 100vh;
+    margin: -100px;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    .load_img{
+        margin: 0 auto;
+    }
+    .load_p{
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+    }
+  }

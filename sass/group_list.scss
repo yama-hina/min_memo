@@ -1,0 +1,286 @@
+//上部のナビ部分
+header{
+    //背景色
+    $back_color:rgb(255, 180, 68);
+    background-color: rgb(255, 180, 68);
+    border-bottom: solid rgb(255, 199, 95);
+    box-shadow: rgb(255, 199, 95) 0 0 5px;
+    height: 90px;
+    // background-color: $back_color;
+    color: rgb(83, 81, 81);
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    a{
+        position: static;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    //検索ボタン
+    #search{
+        background-color: $back_color;
+    }
+    //検索
+    #search-wrap{
+        position: absolute;/*絶対配置にして*/
+        z-index: 2;/*最前面に設定。数字は変更可*/
+        top:5px;
+        left:10px;
+        width: 60%;
+    }
+    //テキスト入力input設定
+    #search-text{
+        -webkit-appearance: none;/*SafariやChromeのデフォルトの設定を無効*/
+        width: 30%;/*テキスト入力エリアが伸びる前の横幅*/
+        height: 80px;
+        border: none;
+        background:$back_color url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23ffffff' d='M15,14C12.33,14 7,15.33 7,18V20H23V18C23,15.33 17.67,14 15,14M6,10V7H4V10H1V12H4V15H6V12H9V10M15,12A4,4 0 0,0 19,8A4,4 0 0,0 15,4A4,4 0 0,0 11,8A4,4 0 0,0 15,12Z' /></svg>") no-repeat 12px center;/*虫眼鏡アイコンを背景に表示*/
+        background-size: 35px;
+        transition: 0.5s;/*transitionを使ってスムースに伸ばす*/
+        outline: none;
+        float: left;
+    }
+    //テキスト入力inputにフォーカスした時の形状(横に伸びるように)
+    #search-text:focus{
+        width: 85%;/*テキスト入力エリアが伸びる後の横幅*/
+        padding: 20px 0 20px 60px;
+    }
+    //検索ボタンのデザイン
+    #sbtn{
+        height: 80px;
+        width: 15%;
+        background-color: $back_color;
+        border: none;
+        // display: none;
+        opacity: 0;
+    }
+
+    //通知のベルボタン
+    #modalOpen{
+        background-color: transparent;
+        // background-color: pink;
+        border: none;
+        width: 50px;
+        height: 50px;
+        margin-right: 5px;
+        position: fixed;
+        transform: translate(-50%,-50%);
+        top:45px;
+        right:30px;
+
+        svg{
+            fill: #ffffff;
+            stroke: #ffffff;
+        }
+    }
+    //マイページボタン
+    #mypage{
+        position: fixed;
+        transform: translate(-50%,-50%);
+        top:45px;
+        right:-20px;
+        // border: 2px solid rgb(149, 149, 149);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        // float: right;
+        .userImg{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        //ユーザーアイコンがデフォルトのとき
+        .default{
+            width: 70%;
+            height: 70%;
+        }
+    }
+    //真ん中の文字
+    #headerText{
+        position: fixed;
+        transform: translate(-50%,-50%);
+        top:45px;
+        left: 50%;
+        font-size: 33px;
+        font-weight: 900;
+        letter-spacing: 0.1em;
+    }
+}
+
+body{
+    height: auto;
+    background: linear-gradient( #ffe5b284 10%,#ffd78784 30%, #fdbb3890,#ffd78784 70%, #ffe5b284);
+}
+main{
+    // margin-top: 80px;
+    overflow: auto;
+}
+//通知のiframe
+#easyModal{
+    .modal-content{
+        width: 90%;
+        height: 500px;
+        iframe{
+            border: none;
+            margin: 0px;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 0px 0px 15px 15px;
+        }
+    }
+}
+
+
+//招待モーダル
+.modal-body{
+    //グループ名
+    h2{
+        margin: 10px 0;
+    }
+    //写真部分
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+    //参加するボタン
+    .button{
+        margin: 0;
+        padding: 10px 30px;
+    }
+
+}
+
+
+
+
+//グループ作成ボタン
+#groupRegister{
+    display: block;
+    //位置
+    position: fixed;
+    right: 5%;
+    bottom: 2%;
+    z-index: 1;
+    .button{
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        font-size: 150%;
+        padding: 30px;
+        color: white;
+        background-image: url(../img/material/plus.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        
+    }
+
+}
+
+
+//グループ一覧画面
+table{
+    //テーブル内で使う変数
+    $size: 115px; //一つ一つの項目の高さ
+    $border_color: rgb(202, 202, 202);
+
+    border-collapse: collapse;
+    width: 100%;
+    animation: fadein 0.5s ease-out forwards;
+    @keyframes fadein {
+        0%   {
+                transform: scale(0.5, 0.5);
+                opacity: 0; 
+            }
+        100% { 
+                transform: scale(1.0, 1.0); 
+                opacity: 1;
+            }
+    }
+    tr{
+        width: 100%;
+        height: $size;
+        //グループアイコン部分
+        th{
+            width: 102%;
+            height: $size;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            span{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                margin-left: 5%;
+                border: 1px rgb(199, 199, 199) solid;
+            }
+            .userImg{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+            //ユーザーアイコンがデフォルトのとき
+            .default{
+                width: 70%;
+                height: 70%;
+                object-fit: contain;
+            }
+        }
+        //グループ名部分
+        td{
+            // background-color: aqua;
+            text-align: left;
+            background-image: url(../img/material/siori.png);
+            background-size: cover;
+            background-position: center;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            width: 75%;
+            height: $size;
+            overflow: hidden;
+
+
+            //中のリンクの設定
+            a{
+                color: black;
+                font-size: 1rem;
+                padding-left: 7%;
+                display: block;
+                text-decoration: none;
+                line-height: $size;
+                max-width: 100%;
+                width: 200px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+}

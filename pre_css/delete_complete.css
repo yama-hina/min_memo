@@ -1,0 +1,12 @@
+main{
+    text-align: center;
+}
+header{
+    margin-bottom: 60%;
+}
+main>h1{
+    margin-bottom: 20%;
+}
+main>p{
+    margin-bottom: 40%;
+}

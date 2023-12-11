@@ -1,0 +1,27 @@
+/* グループ削除画面、グループ脱退画面に用いるCSS */
+
+header {
+    margin-bottom: 50px;
+}
+
+h1,
+p,
+h2 {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.icon_big {
+    margin-bottom: 35px;
+}
+
+p {
+    margin-bottom: 50px;
+}

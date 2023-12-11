@@ -1,0 +1,524 @@
+/* 全画面共通のCSS */
+
+/* 文字の設定(デザインカンプのフォントサイズ参照) */
+html,
+body {
+    font-size: 62.5%;
+    /* 文字サイズを10pxに固定しいてる */
+    color: #696969;
+    /* ゴシック体で表示されるようにする基本的な書き方 */
+    font-family: 'M PLUS 1p', sans-serif;
+    /* 画面左右に20pxの余白を付ける(デザインカンプのグリッド線と同じ) */
+    padding: 0 20px;
+    background-color: #FFFCF6;
+}
+
+h1 {
+    /* 22px */
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+h2 {
+    /* 20px */
+    font-size: 2.0rem;
+    font-weight: 700;
+}
+
+p,
+li,
+td,
+th,
+dt,
+dd {
+    /* 16px */
+    font-size: 1.6rem;
+    line-height: 1.9;
+}
+
+th,
+dt {
+    font-weight: 700;
+}
+
+/* 基本的に必須項目に使う */
+small {
+    display: block;
+    font-size: 1.2rem;
+    color: red;
+    margin-bottom: .3rem;
+}
+
+/* 画像の初期設定(画像の横幅をpxから%に変更してる) */
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 各種コンポーネントのCSS */
+
+
+/* header(遠山担当) */
+/* グループ一覧画面に関しては専用で作る */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+header .arrow img {
+    height: 20px;
+}
+
+header .santen img {
+    height: 20px;
+}
+
+/* header終了 */
+
+
+
+/* 最初の言葉(山本担当) */
+.message {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* 最初の言葉(山本担当) */
+
+
+
+
+/* 横長ボタン(濃いオレンジ、遠山担当、完了) */
+.longBtnDarkOrange button {
+    background-color: #FFA500;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 0.3em;
+    /* letter-spacingでずれた分の調整 */
+    text-indent: 0.3em;
+    /* 影 */
+    box-shadow: 0px 0.2em 7px #bbb;
+}
+
+.longBtnDarkOrange button:active {
+    background-color: #ffa600c6;
+}
+
+/* 横長ボタン(濃いオレンジ)終了 */
+
+
+/* 横長ボタン(赤色、遠山担当、完了) */
+.longBtnRed button {
+    background-color: #FF4C34;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 0.3em;
+    /* letter-spacingでずれた分の調整 */
+    text-indent: 0.3em;
+    /* 影 */
+    box-shadow: 0px 0.2em 7px #bbb;
+}
+
+.longBtnRed button:active {
+    background-color: #FF4C34c6;
+}
+
+/* 横長ボタン(赤色)終了 */
+
+
+/* 横長ボタン(色が薄い、遠山担当、完了) */
+#file_upload {
+    display: none;
+}
+
+.shortBtnThinOrange button {
+    background-color: #FFC96E;
+    /* width: 25%; */
+    text-align: center;
+    /* padding: 12px 0; */
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    /* letter-spacing: 0.3em; */
+    /* letter-spacingでずれた分の調整 */
+    /* text-indent: 0.3em; */
+    /* 影 */
+    box-shadow: 0px 0.2em 7px #bbb;
+    /* 山本が少し変更しました */
+    display: inline;
+    padding: 12px 10px;
+    letter-spacing: .15em;
+}
+
+.shortBtnThinOrange button:active {
+    background-color: #FFC96EC6;
+}
+
+/* 横長ボタン(色が薄い)終了 */
+
+
+/* アイコン(遠山担当) 完了 */
+
+/* 小さい(50px) */
+.icon_mini img {
+    border: 1px solid #E6E6E6;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+/* 大きい(180px) */
+.icon_big {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+}
+
+.icon_big img {
+    border: 1px solid #E6E6E6;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* アイコン終了 */
+
+
+/* テキストボックス、生年月日(山本担当)、完了 */
+input[type="text"],
+input[type="password"],
+input[type='date'],
+input[type='time'] {
+    border: solid 1px #E6E6E6;
+    color: #696969;
+    background-color: #F2F2F2;
+    font-weight: 700;
+    padding: 16px 11px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #929292;
+}
+
+.error {
+    color: red;
+    padding: 0 0 0 10px;
+}
+
+.password {
+    position: relative;
+}
+
+.date {
+    position: relative;
+}
+
+.placeholder {
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    font-weight: 700;
+    color: #929292;
+}
+
+i {
+    /* background-color: pink; */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
+}
+
+/* テキストボックス終了 */
+
+
+/* 丸型ボタン(遠山担当)完了 */
+.circleBtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #FFA500;
+    text-align: center;
+    /* 影 */
+    box-shadow: 0px 0.2em 7px #bbb;
+}
+
+.circleBtn:active {
+    background-color: #FFA500C6;
+}
+
+/* 丸型ボタン終了 */
+
+
+/* プラスボタン(画面に固定させる、遠山担当)、完了 */
+
+
+/* プラスアイコン */
+.circleBtn img {
+    width: 30px;
+    height: 30px;
+}
+
+.rightBottom {
+    /* 画面右下に固定 */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* プラスボタン(画面に固定させる)終了 */
+
+
+/* コメント用フォーム(山本担当)、完了 */
+textarea {
+    border: solid 1px #E6E6E6;
+    color: #696969;
+    background-color: #F2F2F2;
+    font-weight: 700;
+    padding: 16px 11px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+textarea::placeholder {
+    color: #929292;
+}
+
+/* コメント用フォーム終了 */
+
+
+/* 横スクロール画像登録系(ボタン＆プレビュー、山本担当) */
+#fileUpload {
+    /* 本来の表示を消す */
+    display: none;
+}
+
+#preview {
+    width: 100%;
+    border: solid 2px #E6E6E6;
+    border-radius: 10px;
+    color: #929292;
+    background-color: #fff;
+    padding: 20px 5px 20px 5px;
+    overflow-x: scroll;
+}
+
+#preview>p {
+    font-size: 14px;
+    text-align: center;
+}
+
+#preview>ul {
+    /* 画像を横並びに */
+    display: flex;
+}
+
+#preview>ul>li {
+    /* 画像が入る箱のサイズ調整。 */
+    width: 100px;
+    height: 100px;
+    margin: 4px;
+    min-width: 100px;
+    position: relative;
+    /* 画像が潰れるのを防止するために最小サイズを記入 */
+}
+
+#preview>ul>li>img {
+    /* 画像のサイズを調整 */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cross {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 0%;
+    right: 0%;
+}
+
+/* 画像登録系(ボタン＆プレビュー)終了 */
+
+/* 縦スクロール画像登録系(ボタン＆プレビュー、遠山担当) */
+#vPreview {
+    width: 100%;
+    border: solid 2px #E6E6E6;
+    border-radius: 10px;
+    color: #929292;
+    background-color: #fff;
+    padding: 20px 5px 20px 5px;
+    overflow-x: scroll;
+}
+
+#vPreview>p {
+    font-size: 14px;
+    text-align: center;
+}
+
+#vPreview>ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 300px;
+}
+
+#vPreview>ul>li {
+    width: 30%;
+    height: 30%;
+    margin: 4px;
+    min-width: 30%;
+}
+
+#vPreview>ul>li>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 縦スクロール画像登録系(ボタン＆プレビュー、遠山担当)終了 */
+
+/* ログインはこちらみたいなやつ(アンカーリンク) */
+.change_page {
+    font-weight: 700;
+    text-decoration: underline;
+    line-height: 250%;
+}
+
+
+/* イベントセル */
+.event {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #fff;
+    text-shadow: 1px 1px 0 #676767, -1px -1px 0 #676767,
+        -1px 1px 0 #676767, 1px -1px 0 #676767,
+        0px 1px 0 #676767, 0-1px 0 #676767,
+        -1px 0 0 #676767, 1px 0 0 #676767;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.10);
+}
+
+.day {
+    width: 40px;
+    height: 40px;
+    /* border-radius: 50%; */
+    background-color: #717171;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.day>p {
+    color: #FFFFFF;
+    word-break: break-all;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.eventContents>h2 {
+    font-size: 16px;
+}
+
+.eventComment>.comment {
+    font-size: 12px;
+}
+
+.duration>h2 {
+    font-size: 16px;
+}
+
+/* 長いコメントを省略する処理 */
+.eventContents {
+    width: 145px;
+}
+
+.eventName {
+    width: 145px;
+}
+
+.eventName>h2 {
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.eventComment {
+    width: 145px;
+}
+
+.comment {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+
+/* イベントセル終了 */
+
+/* イベント(背景付ける場合) */
+.background {
+    color: #fff;
+    text-shadow: 1px 1px 0 #676767, -1px -1px 0 #676767,
+        -1px 1px 0 #676767, 1px -1px 0 #676767,
+        0px 1px 0 #676767, 0-1px 0 #676767,
+        -1px 0 0 #676767, 1px 0 0 #676767;
+    z-index: 1;
+    position: relative;
+}
+
+/* 背景の設定 */
+/* JSで設定するためコメント化 */
+/* .background:before {
+    content: '';
+    background-image: url(../pre_img/スクリーンショット\ 2023-05-30\ 094726.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.6);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.10);
+
+    border-radius: 10px;
+    z-index: -1;
+} */
+
+/* イベント(背景)終了 */

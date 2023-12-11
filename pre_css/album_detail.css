@@ -1,0 +1,77 @@
+/* ヘッダー―調整 */
+.button_menu {
+    display: flex;
+}
+
+.edit {
+    margin-left: 20px;
+}
+
+#flipbook {
+    margin: 0 auto;
+}
+
+/* モーダルウィンドウの形を整える */
+.modalBg {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.353);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    display: none;
+}
+
+.modalMain {
+    width: 70%;
+    height: 60vh;
+    transform: translate(-50%, -53%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    z-index: 99999;
+    display: none;
+}
+
+.modalHeader {
+    height: 50px;
+    width: 100%;
+    background-color: #FFC96E;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.modalHeader>.modalClose {
+    float: right;
+    color: white;
+    line-height: 50px;
+    padding-right: 15px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.modalBody {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.modalBody>.modalContents {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 10px 10px;
+}
+
+/* モーダルウィンドウの形を整える終了 */
+.modalContents>h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.mdlBtn {
+    width: 70%;
+    margin: 0 auto 20px auto;
+}

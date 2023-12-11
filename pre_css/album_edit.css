@@ -1,0 +1,137 @@
+header {
+    margin-bottom: 25px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.textBox {
+    margin-bottom: 35px;
+}
+
+.viewform {
+    margin-bottom: 35px;
+}
+
+.eventChoice {
+    font-weight: bold;
+}
+
+.year {
+    margin-top: 8px;
+    margin-bottom: 25px;
+}
+
+.viewform>select {
+    font-size: 16px;
+    width: 100%;
+    appearance: auto;
+    /* min-width: 230px;
+    height: 2.8em; */
+    padding-left: 11px;
+    border: solid 1px #E6E6E6;
+    /* 変更部 */
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    color: #929292;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: bold;
+    /* 変更部終了 */
+    /* font-size: 1em; */
+    cursor: pointer;
+}
+
+/* タイトル検索関連 */
+.titleSearch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#title_serch {
+    background-color: #F2F2F2;
+    width: 230px;
+    appearance: auto;
+    /* min-width: 230px;
+    height: 2.8em; */
+    /* border: 1px solid #cccccc; */
+    border-radius: 10px;
+    color: #696969;
+    /* font-size: 1em; */
+    cursor: pointer;
+}
+
+/* タイトル検索関連終了 */
+#eventContena {
+    background-color: #FFFFFF;
+    border: solid 1px #E6E6E6;
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px 10px;
+    height: 500px;
+    overflow: scroll;
+}
+
+.event {
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    padding: 0;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.event::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.img_stack{
+    position: relative;
+}
+
+.eventContents {
+    padding: 15px;
+}
+
+.eventName {
+    filter: brightness(2);
+}
+
+.eventComment {
+    filter: brightness(2);
+}
+
+.event:last-child {
+    margin-bottom: 0;
+}
+
+.eventContents {
+    width: 100%;
+}
+
+.eventContents>div {
+    width: 100%;
+}
+
+.eventError {
+    margin-bottom: 40px;
+}
+
+.longBtnDarkOrange {
+    margin-bottom: 35px;
+}

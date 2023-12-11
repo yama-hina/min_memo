@@ -1,0 +1,61 @@
+body main #title {
+  text-align: center;
+}
+body main #title input[type=text] {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 80vw;
+  padding: 0.3em;
+  padding-left: 15px;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  border: 2px solid #ccc;
+  padding: 10px;
+}
+body main #title input[type=text]:focus {
+  outline: none;
+}
+body main #title input[type=text]:focus::after {
+  outline: none;
+}
+body main h2 {
+  text-align: center;
+  line-height: 3em;
+}
+body main h3 {
+  margin-bottom: 3%;
+}
+body main .checks {
+  display: none;
+}
+body main .boxes {
+  background-color: #ffffff;
+  height: 450px;
+  width: 80vw;
+  overflow: scroll;
+  border-radius: 3%;
+  border: 2px solid #ccc;
+  padding: 10px;
+  margin: 0 auto;
+}
+body main .boxes .event_box .border_box {
+  margin-bottom: 5%;
+  padding: 3%;
+  background: rgb(253, 253, 253);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 3%;
+}
+body main .boxes .event_box .border_box .registed_photos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body main .boxes .event_box .border_box .registed_photos .registed_photo {
+  width: 45%;
+}
+body main #button_box {
+  text-align: center;
+}
+body main #button_box .button {
+  margin-bottom: 10%;
+}/*# sourceMappingURL=album_edit.css.map */

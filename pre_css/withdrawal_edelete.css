@@ -1,0 +1,19 @@
+/* 退会確認画面、イベント削除画面に用いるCSS */
+
+header {
+    margin-bottom: 130px;
+}
+
+h1,
+p,
+h2 {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+p {
+    margin-bottom: 210px;
+}

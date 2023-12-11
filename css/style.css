@@ -1,0 +1,8 @@
+body {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 300;
+}
+body a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

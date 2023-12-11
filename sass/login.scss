@@ -1,0 +1,39 @@
+body{
+    
+    // height: calc(100vh - 90px);
+    // header{
+    //     position: unset;
+    // }
+    main{
+        height: auto;
+        overflow: visible;
+        margin-top: 0px;
+        .btn_area{
+            display: flex;
+            justify-content: center;
+        }
+        form{
+            margin-top: 20%;
+            .cp_iptxt{
+                margin-bottom: 20%;
+            }
+                //パスワードの目
+        #passEye{
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 53%;
+            right: 0px;
+            width: 40px;
+            height: 60px;
+            opacity: 0.5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            #eyeImg{
+                width: 60%;
+            }
+        }
+        }
+    }
+
+}

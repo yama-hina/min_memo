@@ -1,0 +1,159 @@
+/* ヘッダー関連 */
+.right {
+    display: flex;
+    width: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ヘッダー関連終了 */
+
+/* グループに所属していない場合のCSS */
+#noGroup {
+    margin-top: 250px;
+    text-align: center;
+}
+
+#noGroup>h2 {
+    line-height: 300%;
+}
+
+/* グループに所属していない場合のCSS終了 */
+
+/* タブ関連CSS */
+/*タブ切り替え全体のスタイル*/
+.tabs {
+    margin-top: 50px;
+    padding-bottom: 40px;
+    background-color: #fff;
+    border: 1px solid #E6E6E6;
+    width: 302px;
+    margin: 0 auto;
+}
+
+/*タブのスタイル*/
+.tab_item {
+    width: 150px;
+    height: 50px;
+    border-bottom: 3px solid #FFA500;
+    background-color: #d9d9d9;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    color: #565656;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
+    display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+    height: 70vh;
+    width: 100%;
+    display: none;
+    padding: 20px 10px;
+    clear: both;
+    overflow: scroll;
+}
+
+
+/*選択されているタブのコンテンツのみを表示*/
+#schedule:checked~#schedule_content,
+#group:checked~#group_content {
+    display: block;
+}
+
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked+.tab_item {
+    background-color: #FFA500;
+    color: #fff;
+}
+
+/* タブ関連CSS終了 */
+
+/* 予定タブコンテンツ関連 */
+.event {
+    margin-bottom: 15px;
+}
+
+.event:last-child {
+    margin-bottom: 0;
+}
+
+/* 予定タブコンテンツ関連終了 */
+/* グループタブコンテンツ関連 */
+.groupItems {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+/* 最後の要素だけ下線消す */
+.groupItems:last-child {
+    border: none;
+}
+
+.groupName {
+    width: 220px;
+    word-break: break-all;
+    margin-left: 10px;
+}
+
+#notice {
+    height: 220px;
+    overflow: scroll;
+}
+
+.button {
+    width: 70%;
+    margin: 10px auto;
+}
+
+/* .modal-content {
+    position: relative;
+}
+
+.modal-content>.button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 10%;
+} */
+
+
+/* グループタブコンテンツ関連終了 */
+
+/* モーダル内アイコン関連 */
+
+/* 大きい(180px) */
+.icon_big {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.icon_big img {
+    border: 1px solid #E6E6E6;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.longBtnDarkOrange>button {
+    margin: 0;
+    width: 80%;
+}
+
+/* モーダル内アイコン関連終了 */

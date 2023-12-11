@@ -1,0 +1,337 @@
+//上部ナビ部分
+body{
+    // font-family: 'M PLUS 1p', sans-serif;
+    color: #565656;
+    
+    
+    // letter-spacing: 2px;
+}
+
+//上部戻るボタン
+
+//画像が切り替わる部分
+#changeImage{
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-image: url("../img/material/register.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 65%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.7);
+}
+
+//必須の「*」の要素
+.hissu{
+    color: red;
+    // position: absolute;
+}
+
+main{
+    //注意書き
+    #attention{
+        text-align: center;
+        p:nth-of-type(1){
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 25px;
+        }
+        p:nth-of-type(2){
+            color: red;
+            font-weight: 800;
+        }
+    }
+    //テキストボックス
+    .cp_iptxt {
+        position: relative;
+        margin: 0px 10%;
+        
+        margin-bottom: 50px;
+        // background-color: pink;
+        font-weight: 700;
+    }
+    //テキストの場合
+    .cp_iptxt input[type='text'] {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0.3em;
+        padding-left: 15px;
+        letter-spacing: 1px;
+        border-radius: 30px;
+        border: 2px solid #ccc;
+        padding: 10px;
+    }
+    .cp_iptxt input[type='text']:focus {
+        outline: none;
+    }
+    .cp_iptxt input[type='text']:focus::after {
+        outline: none;
+    }
+    //パスワードの場合
+    .cp_iptxt input[type='password'] {
+        box-sizing: border-box;
+        width: 100%;
+        height: 48px;
+        padding: 0.3em;
+        padding-left: 15px;
+        letter-spacing: 1px;
+        border-radius: 30px;
+        border: 2px solid #ccc;
+        position: relative;
+    }
+    .cp_iptxt input[type='password']:focus {
+        outline: none;
+    }
+    .cp_iptxt input[type='password']:focus::after {
+        outline: none;
+    }
+    //テキストボックス下の線
+    // .cp_iptxt i{
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     padding: 9px 5px;
+    // }
+    // .cp_iptxt::after {
+    //     display: block;
+    //     width: 100%;
+    //     height: 5px;
+    //     margin-top: -1px;
+    //     content: '';
+    //     border-width: 0px 1px 1px 1px;
+    //     border-style: solid;
+    //     border-color: #7a7a7a;
+    // }
+    //テキストボックス内のエラー部分
+    .error{
+        color: red;
+        position: absolute;
+        font-size: 14px;
+        top: 110%;
+        left: 2%;
+    }
+    .error_member{
+        color: red;
+        font-size: 14px;
+        top: 110%;
+        left: 2%;
+        font-weight: 800;
+    }
+
+    //生年月日部分
+    #birth{
+        margin-left: 10%;
+        margin-right: 5%;
+        margin-bottom: 40px;
+        font-weight: 600;
+        p{
+            margin-bottom: 3%;
+            font-weight: 600;
+            span{
+                color: red;
+                font-weight: 600;
+                font-size: 0.9rem;
+            }
+        }
+        //カレンダー部分
+        label{
+            font-weight: 600;
+            position: relative;
+            display: inline-block;
+            width: 95%;
+            height: 48px;
+            border-radius: 15px;
+            z-index: 1;
+            margin-bottom: 2%;
+          }
+        input[type="date"]{
+            position: relative;
+            padding: 0 10px;
+            width: 100%;
+            height: 48px;
+            border: 0;
+            background: transparent;
+            box-sizing: border-box;
+            font-size: 14px;
+            color: #181818;
+            border-radius: 30px;
+            background-color: #ffffff;
+            border: 2px solid #ccc;
+        }
+        input[type='date']:focus {
+            outline: none;
+        }
+        input[type="date"]::-webkit-calendar-picker-indicator{
+            position: absolute;
+            width: 150%;
+            height: 100%;
+            opacity: 0;
+        }
+        #date{
+            color: rgb(100, 100, 100);
+        }
+    }
+
+    //パスワードの目
+    #passEye{
+                transform: translate(-50%, -50%);
+                position: absolute;
+                top: 67%;
+                right: 0px;
+                width: 40px;
+                height: 60px;
+                opacity: 0.5;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                #eyeImg{
+                    width: 60%;
+                }
+    }
+
+    //メンバー選択部分
+    #memberSelect{
+        width: 85%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+        p:nth-of-type(2){
+            margin-left: 4%;
+            color: rgb(100, 100, 100);
+            margin-bottom: 10px;
+        }
+        //セレクトボックス部分
+        .boxes{
+            width: 95%;
+            margin: 0 auto;
+        }
+        input[type="checkbox"]{
+            display: none;
+        }
+        input[type="checkbox"] + label{
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 20px;
+            font: 16px/20px 'Open Sans', Arial, sans-serif;
+            color: #000000;
+        }
+        input[type="checkbox"] + label:before{
+            content: '';
+            display: block;
+            width: 25px;
+            height: 25px;
+            border: 1px solid #4685a0;
+            position: absolute;
+            left: 0;
+            top: -2px;
+            opacity: .6;
+            -webkit-transition: all .12s, border-color .08s;
+            transition: all .12s, border-color .08s;
+        }
+        input[type="checkbox"]:checked + label:before {
+            width: 10px;
+            top: -5px;
+            left: 5px;
+            border-radius: 0;
+            opacity: 1;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+
+    //コメント部分
+    #comenntArea{
+        width: 80%;
+        margin: 0 auto;
+        p:nth-of-type(1){
+            color: rgb(100, 100, 100);
+        }
+        textarea{
+            color: rgb(100, 100, 100);
+            width: 100%;
+            height: 120px;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            border-radius: 10px;
+            padding: 2%;
+            font-weight: 500;
+        }
+    }
+
+    //ファイル選択部分
+    #fileSelect{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        #icon{
+            margin-left: 3%;
+            font-size: 1.1rem;
+        }
+        //ボタンとファイル名をflex
+        #fileFlex{
+            //ファイルを選択部分
+            .filelabel {
+                // width: 30%;
+                background-color: orange;
+                color: white;
+                border: 2px solid orange;
+                border-radius: 3em;
+                padding: 9px 12px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    vertical-align: bottom;
+                }
+                p{
+                    margin-left: 10px;
+                }
+            }
+            //本来の選択ボックスを非表示に
+            #file_upload {
+                display: none;
+            }
+            //プレビュー
+            #preview{
+                margin-top: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                p{
+                    width: 25%;
+                    height: 100px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 5px;
+                    padding: 1%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .btn_area{
+        display: flex;
+        justify-content: center;
+    }
+}//main
+
+//ログインできなかったときに一番上に出るエラー
+.loginError{
+    color: red;
+    text-align: center;
+    margin-bottom: 10%;
+}

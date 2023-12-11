@@ -1,0 +1,19 @@
+#error{
+    color: red;
+    font-weight: 800;
+    margin-left: 1rem;
+}
+#title_err{
+    color: red;
+    font-weight: 800;
+    margin-left: 1rem;
+}
+
+.odd{
+    background: linear-gradient(to left, #ffc 95%, rgba(149, 149, 149, 1));
+}
+
+.even{
+    background: linear-gradient(to right, #ffc 95%, rgba(149, 149, 149, 1));
+    /* background-color: antiquewhite; */
+}

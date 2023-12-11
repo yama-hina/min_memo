@@ -1,0 +1,85 @@
+/* グループ情報を表示 */
+    #groupFlex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* メンバー一覧と間隔を空ける */
+        margin-bottom: 10%;
+    }
+    .icon{
+        width: 100px;
+        height: 100px;
+    }
+    .icon>img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    /* グループ名と招待コードを調整 */
+    #groupFlex>div>p:nth-of-type(1){
+        font-size: 20px;
+        font-weight: 700;
+    }
+    #groupFlex>div>p:nth-of-type(2) {
+        font-size: 16px;
+        font-weight: 700;
+    }
+/* グループ情報を表示 */
+
+
+/* イベント詳細表示 */
+section{
+    text-align: center;
+    margin-bottom: 10%;
+}
+section>h1{
+    margin-bottom: 5%;
+}
+section>h2{
+    font-size: 16px;
+    margin-bottom: 5%;
+}
+
+/* イベント詳細表示 */
+
+
+/* メンバー一覧 */
+    article{
+        margin-bottom: 13%;
+    }
+    article h2{
+        margin-bottom: 3%;
+    }
+    article>ul{
+        padding: 10px 10px 10px 10px;
+        background-color: #fff;
+        border-radius: 10px;
+        border: solid 2px #E3E3E3;
+        height: 300px;
+        overflow-y: scroll;
+    }
+    article>ul>li{
+        display: flex;
+        align-items: center;
+        margin: 3%;
+        font-weight: 700;
+    }
+    article>ul>li>.icon_mini{
+        margin-right: 3%;
+    }
+/* メンバー一覧 */
+
+
+#vPreview{
+    margin-bottom: 10%;
+}
+
+
+/* 変更ボタン */
+.longBtnDarkOrange{
+    margin-bottom: 13%;
+}
+.longBtnRed{
+    margin-bottom: 13%;
+}

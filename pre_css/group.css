@@ -1,0 +1,65 @@
+/* イベントを登録していない場合のCSS */
+#noEvent {
+    margin-top: 250px;
+    text-align: center;
+}
+
+#noGroup>h2 {
+    line-height: 300%;
+}
+
+/* イベントを登録していない場合のCSS終了 */
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#dateSelect {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.viewform {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+
+}
+
+.viewform>select {
+    background-color: #F2F2F2;
+    width: 230px;
+    appearance: auto;
+    /* min-width: 230px;
+    height: 2.8em; */
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+    color: #929292;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: bold;
+    /* font-size: 1em; */
+    cursor: pointer;
+}
+
+
+.longBtnDarkOrange {
+    background-color: #FFC96EC6;
+}
+
+.event {
+    margin-top: 15px;
+    position: relative;
+}
+
+
+
+.shelf {
+    bottom: 100px;
+}
+
+.bmLink {
+    margin: 10px 0;
+}

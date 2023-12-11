@@ -1,0 +1,247 @@
+body {
+  text-align: center;
+}
+
+.userImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.default {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.modalButton {
+  width: 70px;
+  height: 90px;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 900;
+  color: #ffffff;
+  border: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999999;
+}
+
+.modal-body {
+  /* Checkmark style starts */
+}
+.modal-body .modalText {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 17px;
+}
+.modal-body .button {
+  background-color: red;
+  border: 1px solid red;
+  box-shadow: 0px 6px 0px #b10f03;
+  width: 65%;
+  padding: 7px 0;
+}
+.modal-body input[type=checkbox] {
+  display: none;
+}
+.modal-body .container {
+  box-sizing: border-box;
+  padding-top: 25px;
+}
+@-moz-keyframes dothabottomcheck {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 25px;
+  }
+}
+@-webkit-keyframes dothabottomcheck {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 25px;
+  }
+}
+@keyframes dothabottomcheck {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 25px;
+  }
+}
+@keyframes dothatopcheck {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 0;
+  }
+  100% {
+    height: 60px;
+  }
+}
+@-webkit-keyframes dothatopcheck {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 0;
+  }
+  100% {
+    height: 60px;
+  }
+}
+@-moz-keyframes dothatopcheck {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 0;
+  }
+  100% {
+    height: 60px;
+  }
+}
+.modal-body .check-box {
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  border: 5px solid #000;
+  border-radius: 10px;
+  position: relative;
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-transition: border-color ease 0.2s;
+  -o-transition: border-color ease 0.2s;
+  -webkit-transition: border-color ease 0.2s;
+  transition: border-color ease 0.2s;
+  cursor: pointer;
+}
+.modal-body .check-box::before, .modal-body .check-box::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  height: 0;
+  width: 10px;
+  background-color: #34b93d;
+  display: inline-block;
+  -moz-transform-origin: left top;
+  -ms-transform-origin: left top;
+  -o-transform-origin: left top;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  border-radius: 5px;
+  content: " ";
+  -webkit-transition: opacity ease 0.5;
+  -moz-transition: opacity ease 0.5;
+  transition: opacity ease 0.5;
+}
+.modal-body .check-box::before {
+  top: 36px;
+  left: 20.5px;
+  box-shadow: 0 0 0 2.5px transparent;
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+.modal-body .check-box::after {
+  top: 18.5px;
+  left: 2.5px;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.modal-body input[type=checkbox]:checked + .check-box,
+.modal-body .check-box.checked {
+  border-color: #34b93d;
+}
+.modal-body input[type=checkbox]:checked + .check-box::after,
+.modal-body .check-box.checked::after {
+  height: 25px;
+  -moz-animation: dothabottomcheck 0.2s ease 0s forwards;
+  -o-animation: dothabottomcheck 0.2s ease 0s forwards;
+  -webkit-animation: dothabottomcheck 0.2s ease 0s forwards;
+  animation: dothabottomcheck 0.2s ease 0s forwards;
+}
+.modal-body input[type=checkbox]:checked + .check-box::before,
+.modal-body .check-box.checked::before {
+  height: 60px;
+  -moz-animation: dothatopcheck 0.4s ease 0s forwards;
+  -o-animation: dothatopcheck 0.4s ease 0s forwards;
+  -webkit-animation: dothatopcheck 0.4s ease 0s forwards;
+  animation: dothatopcheck 0.4s ease 0s forwards;
+}
+
+main h2 {
+  font-weight: 900;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+main #groupIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 50%;
+}
+main #member {
+  width: 90%;
+  margin: 0 auto;
+}
+main #member .boxes {
+  background-color: #ffffff;
+  height: 300px;
+  overflow: scroll;
+  border-radius: 3%;
+  border: 2px solid #ccc;
+  padding: 10px 5px;
+}
+main #member .memberList {
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+}
+main #member .memberList .iconImg {
+  width: 50px;
+  height: 50px;
+}
+main #member .memberList p {
+  width: 90%;
+  text-align: left;
+  font-weight: 400;
+  margin-left: 15px;
+  font-size: 18px;
+}
+main #invitation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+main #invitation h3 {
+  font-size: 1.5rem;
+}
+main #invitation #code {
+  font-weight: 700;
+  margin-left: 20px;
+  font-size: 1.5rem;
+}/*# sourceMappingURL=group_detail.css.map */

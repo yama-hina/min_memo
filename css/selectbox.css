@@ -1,0 +1,55 @@
+@charset "UTF-8";
+.custom-select {
+  position: relative;
+  width: 80vw;
+  max-width: 25em;
+  margin: 4em auto;
+  cursor: pointer;
+}
+
+.select,
+.label {
+  display: block;
+}
+
+.select {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 1em;
+  height: 4em;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  background: none transparent;
+  border: 0 none;
+}
+
+.label {
+  position: relative;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 1em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.label::after {
+  content: "▼";
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1em;
+  border-left: 1px solid;
+}
+
+.open .label::after {
+  content: "▼";
+}
+
+.select-1 {
+  background: #ff9633;
+  border: 3px solid rgb(255, 183, 81);
+}
+.select-1:after {
+  border-color: #e6e6e6;
+}/*# sourceMappingURL=selectbox.css.map */

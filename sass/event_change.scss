@@ -1,0 +1,123 @@
+body{
+    // delete photo
+    // text-align: center;
+    .delete_photos{
+        display: flex;
+        flex-wrap: wrap;
+        .delete_photo{
+            width: 100px;
+            img{
+                width: 100px;
+                height: auto;
+            }
+        }
+        .border{
+            border: red solid 10px;
+        }
+    }
+    
+    .buttonCenter{
+        // background-color: pink;
+        text-align: center;
+    }
+
+    width: 100vw;
+    header{
+        position: fixed;
+        top: 0;
+    }
+    main{
+        // margin-top: 90px;
+        #memberSelect{
+            padding: 2%;
+        }
+        //登録済みの情報
+        #register_table{
+            margin: 0 auto;
+            padding: 25px;
+            width: 80%;
+            background-color: rgb(255, 255, 255);
+            border-radius: 20px;
+            font-weight: 700;
+            overflow-wrap: anywhere;
+            font-size: 15px;
+            .register_contents{
+                margin: 0 auto; 
+                width: 100%;
+                .table_title{
+                    font-size: 20px;
+                    margin-bottom: 3%;
+                    margin-top: 8%;
+                }
+                //登録写真
+                .registered_photos{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    margin-top: 10px;
+                    //登録写真の一覧
+                    .registered_photo{
+                        width: 25%;
+                        height: 70px;
+                        display: flex;
+                        padding: 1%;
+                        justify-content: center;
+                        align-items: center;
+                        .imgOpen{
+                            // background-color: pink;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+                //モーダルの中身
+                .modal-body{
+                    form{
+                        padding-top: 10px;
+                        width: 95%;
+                        height: 280px;
+                        margin: 0 auto;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+        }//register_table 登録済みの情報
+        h2{
+            padding: 5%;
+            text-align: center;
+        }
+        #button{
+            margin-top: 5%;
+            // margin-bottom: 10%;
+            text-align: center;
+            padding: 5px 10%;
+        }
+        .cp_iptxt{
+            margin-bottom: 5%;
+        }
+
+        //画像変更部分
+        #fileSelect{
+            width: 80%;
+            // background-color: pink;
+            .delete_photos{
+                display: flex;
+                .delete_photo{
+                    width: 25%;
+                    height: 80px;
+                    padding: 0.5%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }//main
+}//body

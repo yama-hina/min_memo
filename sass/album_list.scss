@@ -1,0 +1,118 @@
+body{
+    width: 100vw;
+    //背景を木目調にする３行
+        background-image: url('../img/material/tree.jpg');
+        background-color: rgba(255, 255, 255, 0.3);
+        background-blend-mode: lighten;
+    //
+    
+    // エラー文　ここのCSSよろです！！！！！
+    #err_event{
+        position: absolute;
+        color: red;
+        font-weight: 700;
+    }
+    #contena{
+        width: 95%;
+        margin: 0 auto;
+        // 上に空白を与える
+        margin-top: 45px;
+        .album-line{
+            // アルバム1行分
+            display: flex;
+            
+            // 吊り棚画像
+                background-image: url('../img/shelf007.png');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: bottom;
+                padding-bottom:15%;
+            //
+            margin-bottom: 10px;
+            .book{
+                // 本（アルバム１冊）
+                display: flex;
+                justify-content: center;
+                z-index: 0;
+                width: 50%;
+                .hll{
+                    background-color: #ffc;
+                    position: relative;
+                    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+                    // アルバムのサイズを変えるならここ！！(3:4)
+                        width: 84px;
+                        height: 112px;
+                    //  
+                    a{
+                        position: absolute;
+                        top:0;
+                        left: 0;
+                        width:100%;
+                        height:100%;
+                        z-index: 2;
+                        text-decoration: none;
+                    }
+
+                    .background_img {
+                        z-index: 1;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+            
+                        img {
+                            object-fit: cover;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .title{
+                        position: absolute;
+                        z-index: 2;
+                    }
+                }
+            }
+        }
+        .before:nth-of-type(1){
+            margin-top: 9rem;
+        }
+        .before{
+            margin-top: 7rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+
+//作成ボタン
+main{
+    .absolute{
+        position: absolute;
+    }
+    form{
+        div{
+            //ボタンサイズ
+            $button_size: 60px;
+            z-index: 777;
+            display: block;
+            // width: $button_size;
+            // height: $button_size;
+            //位置
+            position: fixed;
+            right: 5%;
+            bottom: 2%;
+            .button{
+                border-radius: 50%;
+                width: 100%;
+                height: 100%;
+                font-size: 150%;
+                padding: 30px;
+                color: white;
+                background-image: url(../img/material/plus.png);
+                background-position: center;
+                background-size: 30px;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}//main(作成ボタン)
+

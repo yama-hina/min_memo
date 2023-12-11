@@ -1,0 +1,109 @@
+/* 一番上の言葉 */
+.message{
+    margin: 0 0 5% 0;
+}
+/* テキストボックス(テキスト、パスワード、日付) */
+.textBox {
+    margin-bottom: 7%;
+}
+.date{
+    margin-bottom: 7%;
+}
+/* メンバーを選択 */
+    .searchFlex { /* ボタンと検索を横並びに */
+        display: flex;
+        align-items: center;
+        padding: 7% 0 2% 0; /* 上下の間隔をあける */
+    }
+    .shortBtnThinOrange{ /* ボタンの間隔を空ける */
+        margin-bottom: 3%;
+        margin-right: 3%;
+    }
+    .shortBtnThinOrange button{ /* ボタンの改行をなくす */
+        white-space: nowrap;
+    }
+    input[type="text"].search{ /* 検索ボックス */
+        margin-bottom: 2%;
+        padding: 12px 10px 12px 9%;
+        font-size: 14px;
+        background-image: url('../pre_img/material/search.png');
+        background-repeat: no-repeat;
+        background-position: 3% center;
+        background-size: 7%;
+    }
+    /* チェックボックス部分 */
+    .checkBoxes{
+        border: solid 1px #E6E6E6;
+        background-color: #F2F2F2;
+        height: 200px;
+        padding: 3% 0 1% 0;
+        border-radius: 10px;
+        margin-bottom: 13%;
+        overflow-y: scroll;
+    }
+    input[type=checkbox] { /* 本来のチェックボックスを非表示 */
+        display: none;
+    }
+    .label {
+        position: relative;
+        color: #929292;
+        padding: 0 0 0 12%;
+        font-size: 16px;
+        transition: 0.3s;
+        display: block;
+        margin-bottom: 4%;
+    }
+    .label::after{ /* チェックボックスの形を作る */
+        position: absolute;
+        content: "";
+        display: block;
+        top: 0%;
+        left: 5%;
+        margin: -10px 0 0 -2px;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #969696;
+        border-radius: 50%;
+        transition: 0.3s;
+    }
+    .label:after, .label:before {
+        position: absolute;
+        content: "";
+        display: block;
+        top: 50%;
+    }
+    .label:before { /* チェックマークを作成 */
+        position: absolute;
+        left: 6%;
+        margin-top: -4%;
+        width: 10px;
+        height: 20px;
+        border-right: 4px solid #696969;
+        border-bottom: 4px solid #696969;
+        transform: rotate(45deg);
+        opacity: 0;
+        transition: 0.3s;
+    }
+    /*チェックボックスがチェックされた時に動作する内容*/
+    input[type=checkbox]:checked+.label{ /* 文字を黒くする */
+        color: #696969;
+        font-weight: 700;
+    }
+    input[type=checkbox]:checked+.label:before {/* チェックマークを見せる */
+        opacity: 1;
+    }
+    input[type=checkbox]:checked+.label::after {/* 丸を消す */
+        opacity: 0;
+    }
+/* メンバーを選択終了 */
+
+/* コメント */
+textarea{
+    margin-bottom: 13%;
+}
+
+
+/* 確認ボタン */
+.longBtnDarkOrange button{ 
+    margin: 10% 0 10% 0;
+}

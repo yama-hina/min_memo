@@ -1,0 +1,68 @@
+header{
+    height: 90px;
+    background-color: rgb(255, 180, 68);
+    border-bottom: solid rgb(255, 199, 95);
+    box-shadow: rgb(255, 199, 95) 0 0 5px;
+    color: rgb(83, 81, 81);
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 90px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999999999;
+    // box-shadow: 0px 1px 10px  rgba(0, 0, 0, 0.32);
+    font-weight: 900;
+    a{
+        width: 50px;
+        line-height: 90px;
+        font-size: 1.6rem;
+        text-decoration: none;
+        // margin-left: 5px;
+        // background-color: aqua;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 45px;
+        left:45px;
+
+        .Arrow-Left {
+            border-bottom: solid 6px #ffffff;
+            border-left: solid 6px #ffffff;
+            width: 24px;
+            height: 24px;
+            transform: rotate(45deg);
+            border-radius: 4px;
+        }
+    }
+    #headerText{
+        margin: 0 auto;
+        font-size: 33px;
+        font-weight: 600;
+    }
+    
+}
+
+html{
+    height: -webkit-fill-available;
+  }
+body{
+    // height: 100%;
+    // height: calc(100vh - 90px);
+    // background-size: calc(100vh - 90px);
+    background-attachment: fixed;
+    background-size: 200%;
+    background: linear-gradient( #ffe5b284 10%,#ffd78784 30%, #fdbb3890,#ffd78784 70%, #ffe5b284);/*グラデーションを定義*/
+    //以下３文を追加してみた
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    padding-top: 90px;
+    main{
+        // height: 100%;
+        // height: calc(100vh - 90px);
+        // margin-top: 90px;
+        overflow: auto;
+    }
+}

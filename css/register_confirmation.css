@@ -1,0 +1,28 @@
+body {
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+#check {
+  text-align: center;
+  margin-top: 30%;
+  margin-bottom: 5%;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+table tr td {
+  border-bottom: solid 1px gray;
+  padding: 5%;
+}
+table tr td:nth-of-type(1) {
+  text-align: right;
+}
+table tr:nth-of-type(1) td {
+  border-top: solid 1px gray;
+  padding: 5%;
+}/*# sourceMappingURL=register_confirmation.css.map */

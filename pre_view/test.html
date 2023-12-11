@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../pre_css/destyle.css">
+    <link rel="stylesheet" type="text/css" href="../pre_css/common.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="arrow">
+            <img src="../pre_img/material/arrow.png" alt="戻るボタン">
+        </div>
+        <div class="santen">
+            <img src="../pre_img/material/santen.png" alt="三点リーダー">
+        </div>
+    </header>
+
+    <!-- イベントの1セル -->
+    <div class="event">
+        <!-- 日付表示部 -->
+        <div class="day">
+            <!-- 日付 -->
+            <p>12</p>
+        </div>
+        <!-- イベント名、コメント表示部 -->
+        <div class="eventContents">
+            <div class="eventName">
+                <h2>U22のイベント11111111111111111111</h2>
+            </div>
+            <div class="eventComment">
+                <p class="comment">
+                    今日は晴天です。あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+                </p>
+            </div>
+        </div>
+        <!-- 期間内の日付、(例：2/3日目) -->
+        <div class="duration">
+            <h2>2/3日目</h2>
+        </div>
+    </div>
+    <!-- イベントの1セル終了 -->
+    <!-- イベントの1セル(背景) -->
+    <div class="event background">
+        <!-- 日付表示部 -->
+        <div class="day">
+            <!-- 日付 -->
+            <p>12</p>
+        </div>
+        <!-- イベント名、コメント表示部 -->
+        <div class="eventContents">
+            <div class="eventName">
+                <h2>U22のイベント11111111111111111111</h2>
+            </div>
+            <div class="eventComment">
+                <p class="comment">
+                    今日は晴天です。あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+                </p>
+            </div>
+        </div>
+        <!-- 期間内の日付、(例：2/3日目) -->
+        <div class="duration">
+            <h2>2/3日目</h2>
+        </div>
+    </div>
+    <!-- イベントの1セル(背景)終了 -->
+    <!-- 横長ボタン(濃いオレンジ)用 -->
+    <div class="longBtnDarkOrange">
+        <button>登録</button>
+    </div>
+    <!-- 横長ボタン用終了 -->
+
+
+
+    <!-- テキストボックス -->
+    <div class="textBox">
+        <small>*必須</small>
+        <input type="text" autocomplete="off" placeholder="イベント名" name="event" value="">
+        <p class="error">こちらはエラーです</p>
+    </div>
+    <!-- テキストボックス終了 -->
+
+    <!-- パスワード -->
+    <div class="textBox">
+        <small>*必須</small>
+        <div class="password">
+            <input id="passBox" type="password" autocomplete="off" placeholder="パスワード" name="event" value="">
+            <i class="fa-solid fa-eye-slash"></i>
+        </div><!-- password -->
+        <p class="error">エラー</p>
+    </div>
+    <!-- パスワード終了 -->
+
+    <!-- 日付、生年月日用フォーム(山本担当) -->
+    <input type="text" autocomplete="off" placeholder="生年月日" name="date" onfocus="(this.type='date')" onblur="(this.type='text')" pattern="\d{4}-\d{2}-\d{2}">
+    <div class="date">
+        <input type="date" autocomplete="off" placeholder="生年月日" name="date" pattern="\d{4}-\d{2}-\d{2}">
+        <p class="placeholder">生年月日</p>
+    </div><!-- date -->
+    <!-- 日付、生年月日用フォーム終了 -->
+
+    <!-- コメント用フォーム(山本担当) -->
+    <textarea name="" placeholder="コメントを入力してください" rows="5"></textarea>
+    <!-- コメント用フォーム終了 -->
+
+
+
+    <!-- 横長ボタン(赤)用 -->
+    <div class="longBtnRed">
+        <button>グループを脱退する</button>
+    </div>
+    <!-- 横長ボタン(赤)用終了 -->
+
+
+    <!-- プラスボタン用 -->
+    <button type="file" class="circleBtn rightBottom">
+        <img src="../pre_img/material/plus.png" alt="プラスマーク">
+    </button>
+    <!-- プラスボタン用終了 -->
+
+
+    <!-- 丸型ボタン用 -->
+    <button class="circleBtn">
+        <img src="../pre_img/material/plus.png" alt="プラスマーク">
+    </button>
+    <!-- 丸型ボタン用終了 -->
+
+
+    <!-- 横長ボタン(薄いオレンジ)用 -->
+    <div class="shortBtnThinOrange">
+        <button>画像登録</button>
+    </div>
+    <!-- 横長ボタン(赤)用終了 -->
+
+
+    <!-- 画像登録(複数個)系(ボタン＆プレビュー、山本担当) -->
+    <div class="shortBtnThinOrange">
+        <button>画像登録</button>
+    </div>
+    <!-- 本来のインプットは隠す -->
+    <input type="file" id="fileUpload" name="img[]" multiple="multiple" accept="image/*">
+    <div id="preview">
+        <p>写真のプレビューが表示されます</p>
+    </div>
+    <!-- 画像登録系終了 -->
+
+    <!-- 縦スクロール画像登録 -->
+    <div id="vPreview">
+        <ul>
+            <li><img class='img_stack' src="../pre_img/ななち.jpg" alt=""></li>
+            <li><img class='img_stack' src="../pre_img/ななち.jpg" alt=""></li>
+            <li><img class='img_stack' src="../pre_img/ななち.jpg" alt=""></li>
+            <li><img class='img_stack' src="../pre_img/ななち.jpg" alt=""></li>
+            <li><img class='img_stack' src="../pre_img/ななち.jpg" alt=""></li>
+            <li><img class='img_stack' src="../pre_img/ななち.jpg" alt=""></li>
+            <li><img class='img_stack' src="../pre_img/ななち.jpg" alt=""></li>
+            <li><img class='img_stack' src="../pre_img/ななち.jpg" alt=""></li>
+            <li><img class='img_stack' src="../pre_img/ななち.jpg" alt=""></li>
+            <li><img class='img_stack' src="../pre_img/ななち.jpg" alt=""></li>
+            <li><img class='img_stack' src="../pre_img/ななち.jpg" alt=""></li>
+            <li><img class='img_stack' src="../pre_img/ななち.jpg" alt=""></li>
+            <li><img class='img_stack' src="../pre_img/ななち.jpg" alt=""></li>
+            <li><img class='img_stack' src="../pre_img/ななち.jpg" alt=""></li>
+            <li><img class='img_stack' src="../pre_img/ななち.jpg" alt=""></li>
+            <li><img class='img_stack' src="../pre_img/ななち.jpg" alt=""></li>
+            <li><img class='img_stack' src="../pre_img/ななち.jpg" alt=""></li>
+            <li><img class='img_stack' src="../pre_img/ななち.jpg" alt=""></li>
+            <li><img class='img_stack' src="../pre_img/ななち.jpg" alt=""></li>
+            <li><img class='img_stack' src="../pre_img/ななち.jpg" alt=""></li>
+            <li><img class='img_stack' src="../pre_img/ななち.jpg" alt=""></li>
+            <li><img class='img_stack' src="../pre_img/ななち.jpg" alt=""></li>
+        </ul>
+    </div>
+    <!-- 縦スクロール画像登録終了 -->
+
+
+    <!-- アイコン用 -->
+    <div class="icon_mini">
+        <img src="../pre_img/ななち.jpg" alt="">
+    </div>
+
+    <div class="icon_big">
+        <img src="../pre_img/ななち.jpg" alt="">
+    </div>
+    <!-- アイコン用終了 -->
+
+    <!-- アンカーリンク -->
+    <p><a class="change_page" href="">ログインはこちら</a></p>
+
+
+
+
+</body>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="js/func.js"></script>
+<script>
+    //type['date']のプレースホルダみたいなやつ
+    if ($('input[type="date"]').val() == '') { // 日付入っていないとき
+        let ignoreBlurAfterChange = false;
+        $('input[type="date"]').on('change', function () {
+            console.log('changeイベント発生');
+            $('.placeholder').css('display', 'none');　// 日付入力後は消す
+            ignoreBlurAfterChange = true; // changeイベント発火後にフラグをtrueに設定
+        });
+        $('input[type="date"]').on('blur', function () {
+            if (ignoreBlurAfterChange) {
+                // changeイベント発火後はblurイベントを無視する
+                console.log('blurイベント無視');
+                ignoreBlurAfterChange = false; // フラグをfalseに戻す
+                return;
+            }
+            console.log('blurイベント発生');
+            $('.placeholder').css('display', 'block');
+        });
+        $('.placeholder').click(function (e) {
+            $(this).css('display', 'none');
+            $('input[type="date"]').focus();
+        });
+
+        $('input[type="date"]').focus(function (e) {
+            $('.placeholder').css('display', 'none');
+        });
+    } else {// 日付が入っていたとき
+        $('.placeholder').css('display', 'none');
+    }
+
+    // パスワードの目パチパチ(jQueryなし)
+    let eye = document.getElementsByTagName('i')[0];
+    let passBox = document.getElementById('passBox');
+    eye.addEventListener('click', function () {
+        if (eye.className == 'fa-solid fa-eye-slash') {
+            eye.className = 'fa-solid fa-eye';
+            passBox.type = 'text';
+        } else {
+            eye.className = 'fa-solid fa-eye-slash';
+            passBox.type = 'password';
+        }
+    });
+
+    // 画像登録複数個の場合
+    // 画像を選択ボタンをクリックしたら写真選択画面が立ち上がる
+    document.getElementsByClassName("shortBtnThinOrange")[1].addEventListener("click", () => {
+        document.querySelector("input[type='file']").click();
+    });
+    //画像を選択したらプレビューが表示される
+    $(function () {
+        $('#fileUpload').change(function () {
+            if (!this.files.length) {
+                return;
+            }
+            $('#preview').text(''); // previewの中身をリセット
+            $('#preview').append('<ul></ul>');
+            var $files = $(this).prop('files');
+            var len = $files.length;
+            for (var i = 0; i < len; i++) {
+                var file = $files[i];
+                var fr = new FileReader();
+                fr.onload = function (e) {
+                    var src = e.target.result;
+                    var img = `<li><img src="${src}"></li>`;
+                    $('#preview>ul').append(img);
+                }
+                fr.readAsDataURL(file);
+            }
+        });
+    });
+</script>
+
+</html>
